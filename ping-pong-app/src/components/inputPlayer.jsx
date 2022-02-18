@@ -10,8 +10,8 @@ const InputPlayer = (props) => {
 
   return (
     <div>
-        <label>Player {props.playerNumber} name:</label><br />
-        <input type="text" onChange={props.onChange}/>
+        <h5>Player {props.playerNumber} name:</h5>
+        <input className='form-control' type="text" onChange={props.onChange}/>
         
     </div>
   )

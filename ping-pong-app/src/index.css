@@ -1,11 +1,59 @@
-body {
+html{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgb(25, 45, 76) !important;
+}
+
+h1{
+  color: #192D4C;
+}
+
+h3{
+  color: #2F97C1;
+}
+
+.add{
+  background-color: #49A078 !important;
+  color: white !important;
+}
+
+.remove{
+  background-color: #2F97C1 !important;
+  color: white !important;
+}
+
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-continue{
+  background-color: #49A078 !important;
+}
+
+.btn-save-game{
+  background-color: #49A078 !important;
+}
+
+.card{
+  margin: auto;
+  max-width: 500px;
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
