@@ -5,38 +5,32 @@ const matchSchema = new mongoose.Schema(
         winner: {
             type: String,
             required: true,
-            index: true,
-            unique: true
+            
         },
         advantage: {
-            type: String,
+            type: Number,
             required: true,
-            index: true,
-            unique: true
+            
         },
         playerName1: {
             type: String,
             required: true,
-            index: true,
-            unique: true
+            
         },
         playerName2: {
             type: String,
             required: true,
-            index: true,
-            unique: true
+           
         },
         playerScore1: {
-            type: String,
+            type: Number,
             required: true,
-            index: true,
-            unique: true
+            
         },
-        winner: {
-            type: String,
+        playerScore2: {
+            type: Number,
             required: true,
-            index: true,
-            unique: true
+            
         },
 
     }
