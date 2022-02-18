@@ -6,7 +6,7 @@ const PlayerSocre = (props) => {
             <h3>{props.playerName}</h3>
             <button onClick={props.onDecrement}>-</button>
             <button onClick={props.onIncrement}>+</button><br />
-            <p>Wins: </p><h2>{props.score}</h2>
+            <p>Score: </p><h2>{props.score}</h2>
         </div>
     )
 }
