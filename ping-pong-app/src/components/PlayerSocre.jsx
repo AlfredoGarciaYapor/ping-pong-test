@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const PlayerSocre = (props) => {
     return (
         <div>
