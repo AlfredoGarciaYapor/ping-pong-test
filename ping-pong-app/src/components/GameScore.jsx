@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import axios from 'axios';
 import { Button} from 'react-bootstrap';
 
 const GameScore = (props) => {
@@ -12,8 +13,11 @@ const GameScore = (props) => {
   }
 
   async function saveGame(){
-    
     console.log('%c⧭', 'color: #00e600', gameInfo);
+    await axios.post('http://localhost:3010/matches/savegame', gameInfo).then((response) => {
+      
+      console.log('%c⧭', 'color: #00a3cc', response);
+    })
   }
 
   return (
