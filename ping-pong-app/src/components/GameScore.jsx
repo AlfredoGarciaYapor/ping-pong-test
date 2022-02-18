@@ -2,18 +2,19 @@ import React from 'react'
 import { Button} from 'react-bootstrap';
 
 const GameScore = (props) => {
-  // const gameInfo = {
-  //   winner: props.winnerName,
-  //   advantage: props.advantage,
-  //   playerName1: props.player1,
-  //   playerName2: props.player2,
-  //   playerScore1: props.score1,
-  //   playerScore2: props.score2
-  // }
+  const gameInfo = {
+    winner: props.winnerName,
+    advantage: props.advantagePoints,
+    playerName1: props.player1,
+    playerName2: props.player2,
+    playerScore1: props.score1,
+    playerScore2: props.score2
+  }
 
-  // async function saveGame(){
-
-  // }
+  async function saveGame(){
+    
+    console.log('%c⧭', 'color: #00e600', gameInfo);
+  }
 
   return (
     <div>
@@ -28,7 +29,7 @@ const GameScore = (props) => {
         </div>
         <div className="row">
           <div className="col d-flex justify-content-center">
-            <Button className='btn-save-game'>Save Game</Button>
+            <Button className='btn-save-game' onClick={saveGame}>Save Game</Button>
           </div>
         </div>
     </div>

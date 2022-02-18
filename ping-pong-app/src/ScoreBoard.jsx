@@ -47,7 +47,7 @@ const ScoreBoard = () => {
                     </Row>
                     <Row>
                         <Col>
-                            <GameScore winnerName = {winner} advantagePoints = {advantage}/>
+                            <GameScore winnerName = {winner} advantagePoints = {advantage} player1 = {playerName1} player2 = {playerName2} score1 = {playerScore1} score2 = {playerScore2}/>
                         </Col>
                     </Row>
                 </Card.Body>
